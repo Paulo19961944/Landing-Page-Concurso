@@ -1,0 +1,160 @@
+/*ESTILO GLOBAL*/
+*{
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Padding*/
+    box-sizing: border-box; /*Ajusta o Box Model*/
+}
+
+/*CORPO DA PÁGINA*/
+body{
+    width: 100vw; /*Largura em 100% da Tela*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro o Eixo Perpendicualr*/
+    font-family: 'Dosis', sans-serif; /*Fonte do Google*/
+}
+
+/*CABEÇALHO*/
+header{
+    width: 100vw; /*Largura de 100% da Tela*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    height: 96px; /*Altura de 96px*/
+    background-color: #011627; /*Cor de Fundo - Azul Escuro*/
+    color: #fafafa; /*Cor da Fonte Branca*/
+}
+
+/*CONTAINER DO CABEÇALHO*/
+header .header-container{
+    width: 80%; /*Largura de 80%*/
+    display: flex; /*Flexbox*/
+    justify-content:  flex-end; /*Alinha no Final da Tela*/
+}
+
+/*PARÁGRAFOS E BOTÕES*/
+p, button{
+    font-size: 0.75rem; /*Tamanho da Fonte 0.75rem | Aprox ~ 16px*/
+}
+
+/*PARÁGRAFOS*/
+p{
+    width: 382px; /*Largura de 382px*/
+    margin-top: 24px; /*Margem no Topo de 24px*/
+}
+
+/*TÍTULOS*/
+h1{
+    font-family: 'Exo', sans-serif; /*Fonte do Google*/
+    text-align: center; /*Alinha o Texto ao Centro*/
+    font-size: 1.1875rem; /*Tamanho da Fonte de 1.1875 rem - Aprox ~19px*/
+}
+
+/*FORMULÁRIO*/
+form{
+    padding: 96px 0; /*Espacamento Superior de 96px e 0 nas laterais*/
+}
+
+/*CAMPOS DO FORMULÁRIO*/
+form fieldset{
+    border: none; /*Tira a Borda*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha o Flex em Colunas*/
+    align-items: center; /*Alinha os Itens ao Centro*/
+}
+
+/*TÍTULO DO FORMULÁRIO*/
+form h1{
+    font-size: 1.375rem; /*Tamanho da fonte de 1.375rem | Aprox ~22px*/
+    margin-bottom: 48px; /*Margem Inferior de 48px*/
+}
+
+/*MENU E BOTÃO DE FECHAR*/
+#menu, #fecharMenuMobile{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*BOTÃO DE ABRIR*/
+#btnAbrirMobile{
+    width: 24px; /*Largura de 24px*/
+    height: 20px; /*Altura de 24px*/
+}
+
+/*IMAGENS*/
+img{
+    margin: 48px 0; /*Margem Superior de 48px*/
+    width: 120px; /*Largura de 120px*/
+    height: 120px; /*Altura de 120px*/
+    object-fit: cover; /*Cobre a imagem no tamanho dela*/
+    object-position: center center; /*Alinha ao Centro*/
+}
+
+/*IMAGEM DO PROFESSOR*/
+#professor{
+    border-radius: 999px; /*Arredonda em Circulo*/
+    object-position: left top; /*Alinha ao Topo e na Esquerda*/
+}
+
+/*CONTAINER DO CONTEÚDO - DARK E LIGHT*/
+.container-content-dark, .container-content-light{
+    width: 100vw; /*Largura de 100% da Tela*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha os Itens ao Centro*/
+}
+
+/*PARÁGRAFOS DO CONTAINER - LIGHT*/
+.container-content-light p{
+    font-weight: bold; /*Fonte em Negrito*/
+    width: 312px; /*Largura de 312px*/
+}
+
+/*CONTEÚDO DO CONTAINER - DARK E FORMULÁRIO*/
+.container-content-dark, form{
+    background-color: #011627; /*Cor de Fundo - Azul Escuro*/
+    color: #fafafa; /*Cor da Fonte - Branco*/
+}
+
+/*BOTÕES CALL TO ACTION*/
+.callToAction{
+    font-family: 'Exo', sans-serif; /*Fonte do Google*/
+    font-weight: 500; /*Fonte Semi Bold*/
+    border-radius: 4px; /*Arredonda a Borda*/
+    border: none; /*Tira a Borda*/
+    margin: 48px; /*Margem de 48px*/
+    background-color: #49A078; /*Cor de Fundo - Verde*/
+    color: #fafafa; /*Cor de Fundo - Branco*/
+    width: 120px; /*Largura de 120px*/
+    height: 32px; /*Altura de 32px*/
+}
+
+/*PRIMEIRO CARD*/
+.card-1{
+    height: 571px; /*Altura de 571px*/
+}
+
+/*ICONE DO COMPUTADOR*/
+#iconeComputador{
+    width: 163px; /*Largura de 163px*/
+    height: 136px; /*Altura de 136px*/
+}
+
+/*CAMPOS DO INPUT E DO TEXTAREA*/
+#name, #email, #message{
+    width: 70vw; /*Largura de 70% da tela*/
+    border: 1px solid #fafafa; /*Cor da Borda Branca*/
+    border-radius: 4px; /*Arredonda a Borda*/
+    margin: 8px 0 16px; /*Margem Superior de 8px, Margem Inferior de 16px e zera as laterais*/
+    background-color: #080808; /*Cor de Fundo - Preta*/
+    color: #fafafa; /*Cor da Fonte - Branco*/
+}
+
+/*INPUTS NOME E EMAIL*/
+#name, #email{
+    height: 24px; /*Altura de 24px*/
+}
+
+/*TEXTAREA*/
+#message{
+    height: 120px; /*Altura de 120px*/
+}
