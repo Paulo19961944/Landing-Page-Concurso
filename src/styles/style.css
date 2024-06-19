@@ -76,6 +76,52 @@ form legend{
     display: none; /*Esconde o Elemento*/
 }
 
+/*BOTÃO DO MENU*/
+#menu ul li {
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha ao Centro no Eixo Principal*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    list-style: none; /*Retira as Marcações da Lista*/
+    border: 1px solid #fafafa; /*Borda Branca de 1px*/
+    border-radius: 8px; /*Arredonda a Borda*/
+    margin-bottom: 16px; /*Margem Inferior de 16px*/
+    width: 144px; /*Largura de 144px*/
+    height: 40px; /*Altura de 40px*/
+}
+
+/*LINKS DO MENU*/
+#menu ul li a{
+    color: #fafafa; /*Cor do Texto - Branca*/
+    text-decoration: none; /*Retira o Sublinhado*/
+    font-size: 0.9375rem; /*Tamanho da Fonte de 93.75% da Raíz do Elemento*/
+}
+
+/*MENU AO ADICIONAR A CLASSE NO JAVASCRIPT*/
+.menu-mobile{
+    z-index: 1; /*Camada 1*/
+    position: absolute; /*Posição Absoluta*/
+    display: flex !important;  /*Flexbox - A Tag !important define que a especifidade é maior*/
+    justify-content: center; /*Alinha ao Centro no Eixo Principal*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    top: 0; /*Alinha no Topo*/
+    left: 0; /*Alinha na Esquerda*/
+    background-color: #011627; /*Cor de Fundo Azul Escuro*/
+    width: 100vw; /*Largura de 100% da Tela*/
+    height: 100vh; /*Altura de 100% da Tela*/
+}
+
+/*BOTÃO FECHAR AO ADICIONAR CLASSE NO JAVASCRIPT*/
+.fechar-menu-responsive{
+    display: flex !important; /*Flexbox - A Tag !important define uma maior especifidade ao elemento*/
+    width: 22.63px; /*Largura de 22.63px*/
+    height: 22.63px; /*Altura de 22.63px*/
+    z-index: 2; /*Camada 2*/
+}
+
+.abrir-menu-responsive{
+    display: none !important; /*Esconde o Display - A Tag !important define uma maior especifidade ao elemento*/
+}
+
 /*BOTÃO DE ABRIR*/
 #btnAbrirMobile{
     width: 24px; /*Largura de 24px*/
