@@ -7,10 +7,10 @@
 
 /*CORPO DA PÁGINA*/
 body{
-    width: 100vw; /*Largura em 100% da Tela*/
+    width: 100%; /*Largura em 100% da Tela*/
     display: flex; /*Flexbox*/
     flex-direction: column; /*Alinha em Colunas*/
-    align-items: center; /*Alinha ao Centro o Eixo Perpendicualr*/
+    align-items: center; /*Alinha ao Centro o Eixo Perpendicuar*/
     font-family: 'Dosis', sans-serif; /*Fonte do Google*/
 }
 
@@ -39,8 +39,8 @@ p, button{
 
 /*PARÁGRAFOS*/
 p{
-    width: 382px; /*Largura de 382px*/
     margin-top: 24px; /*Margem no Topo de 24px*/
+    padding: 0 16px 0;
 }
 
 /*TÍTULOS*/
@@ -64,7 +64,9 @@ form fieldset{
 }
 
 /*TÍTULO DO FORMULÁRIO*/
-form h1{
+form legend{
+    font-weight: 500;
+    text-align: center; /*Alinha o Texto ao Centro*/
     font-size: 1.375rem; /*Tamanho da fonte de 1.375rem | Aprox ~22px*/
     margin-bottom: 48px; /*Margem Inferior de 48px*/
 }
@@ -113,6 +115,10 @@ img{
 .container-content-dark, form{
     background-color: #011627; /*Cor de Fundo - Azul Escuro*/
     color: #fafafa; /*Cor da Fonte - Branco*/
+}
+
+.container-content-dark h1{
+    font-weight: 500;
 }
 
 /*BOTÕES CALL TO ACTION*/

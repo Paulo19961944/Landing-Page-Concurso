@@ -1,0 +1,30 @@
+/*CELULAR*/
+@media (min-width: 480px){
+    /*PARÁGRAFO*/
+    p{
+        width: 80vw; /*Largura de 80% da Tela*/
+    }
+
+    /*PARÁGRAFOS DOS CONTAINERS*/
+    .container-content-light p, .container-content-dark p{
+        width: 80vw; /*Largura de 80% da Tela*/
+    }
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+    /*PARÁGRAFOS*/
+    p{
+        font-size: 1rem; /*Tamanho da Fonte de 100% do elemento raíz*/
+    }
+
+    /*TÍTULOS*/
+    h1, form legend{
+        font-size: 1.5rem; /*Tamanho da Fonte de 150% do elemento raíz*/
+    }
+
+    /*PARÁGRAFOS DOS CONTAINERS*/
+    .container-content-light p, .container-content-dark p{
+        width: 576px; /*Largura Máxima de 576px*/
+    }
+}
