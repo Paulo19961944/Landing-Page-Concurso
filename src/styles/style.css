@@ -97,10 +97,10 @@ form legend{
 }
 
 /*MENU AO ADICIONAR A CLASSE NO JAVASCRIPT*/
-.menu-mobile{
+#menu.menu-mobile{
     z-index: 1; /*Camada 1*/
     position: absolute; /*Posição Absoluta*/
-    display: flex !important;  /*Flexbox - A Tag !important define que a especifidade é maior*/
+    display: flex;  /*Flexbox*/
     justify-content: center; /*Alinha ao Centro no Eixo Principal*/
     align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
     top: 0; /*Alinha no Topo*/
@@ -111,15 +111,15 @@ form legend{
 }
 
 /*BOTÃO FECHAR AO ADICIONAR CLASSE NO JAVASCRIPT*/
-.fechar-menu-responsive{
-    display: flex !important; /*Flexbox - A Tag !important define uma maior especifidade ao elemento*/
+#fecharMenuMobile.fechar-menu-responsive{
+    display: flex; /*Flexbox*/
     width: 22.63px; /*Largura de 22.63px*/
     height: 22.63px; /*Altura de 22.63px*/
     z-index: 2; /*Camada 2*/
 }
 
-.abrir-menu-responsive{
-    display: none !important; /*Esconde o Display - A Tag !important define uma maior especifidade ao elemento*/
+#btnAbrirMobile.abrir-menu-responsive{
+    display: none; /*Esconde o Display*/
 }
 
 /*BOTÃO DE ABRIR*/
