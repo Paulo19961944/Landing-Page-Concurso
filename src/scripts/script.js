@@ -2,6 +2,15 @@ const bodyElement = document.querySelector('body') // Captura o Body
 const menuBtn = document.getElementById('menu') // Captura o Menu
 const abrirMenuMobile = document.getElementById('btnAbrirMobile') // Captura o Botão de Abrir
 const fecharMenuMobile = document.getElementById('fecharMenuMobile') // Captura o Botão de Fechar
+const menuLinks = document.querySelectorAll('#menu ul li a')
+
+// Fecha o menu ao clicar nos links do menu
+for(const link of menuLinks){
+    // Adiciona evento de click no link do menu
+    link.addEventListener('click', () => {
+        fecharMenu() // Fecha o menu
+    })
+}
 
 // Função para Abrir Menu
 const abrirMenu = () => {
