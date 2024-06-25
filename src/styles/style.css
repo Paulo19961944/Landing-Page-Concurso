@@ -5,6 +5,10 @@
     box-sizing: border-box; /*Ajusta o Box Model*/
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*CORPO DA PÁGINA*/
 body{
     width: 100%; /*Largura em 100% da Tela*/

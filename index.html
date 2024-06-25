@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/media-query.css">
 </head>
-<body>
+<body id="home">
     <header>
         <article class="header-container">
             <img src="src/images/Menu Hamburguer.png" alt="Menu de Abrir" id="btnAbrirMobile">
             <img src="src/images/Menu Fechar.png" alt="Menu de Fechar" id="fecharMenuMobile">
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Aula Bônus</a></li>
-                    <li><a href="#">Inscreva-se</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#aula-bonus">Aula Bônus</a></li>
+                    <li><a href="#inscreva-se">Inscreva-se</a></li>
                 </ul>
             </nav>            
         </article>
@@ -31,7 +31,7 @@
                     <img src="src/images/Professor-1.jpg" alt="Nosso Professor" id="professor">
                 </section>
                 <section class="container-content">
-                    <section class="text-container">
+                    <section class="text-container" id="quem-somos">
                         <p>Olá, meu nome é Carlos e eu te ajudarei a passar em concursos de forma rápida, simples e eficaz.</p>
                         <p>Com meu método inovador você  poderá ser aprovado com sucesso e ganhar mais de 5000 R$ por mês dedicando apenas 4 Horas por Dia e entrar na Polícia Federal sendo um dos primeiros na lista.</p>
                     </section>
@@ -89,7 +89,7 @@
                 </section>
             </section>
         </article>
-        <article class="container-dark">
+        <article class="container-dark" id="aula-bonus">
             <section class="container">
                 <section class="image-container">
                     <img src="src/images/Icone Computador.png" alt="Aproveite e Clique no Botão Abaixo e tenha acesso as nossas Aulas Bônus" id="iconeComputador">
@@ -105,7 +105,7 @@
                 </section>
             </section>
         </article>
-        <form action="#">
+        <form action="#" id="inscreva-se">
             <fieldset>
                 <legend>FORMULÁRIO DE INSCRIÇÃO</legend>
                 <label for="name">Nome:</label>
