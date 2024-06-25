@@ -143,8 +143,15 @@ img{
     object-position: left top; /*Alinha ao Topo e na Esquerda*/
 }
 
+.container, .container-content{
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*CONTAINER DO CONTEÚDO - DARK E LIGHT*/
-.container-content-dark, .container-content-light{
+.container-dark, .container-light{
     width: 100vw; /*Largura de 100% da Tela*/
     display: flex; /*Flexbox*/
     flex-direction: column; /*Alinha em Colunas*/
@@ -152,23 +159,24 @@ img{
 }
 
 /*PARÁGRAFOS DO CONTAINER - LIGHT*/
-.container-content-light p{
+.container-light p{
     font-weight: bold; /*Fonte em Negrito*/
     width: 312px; /*Largura de 312px*/
 }
 
 /*CONTEÚDO DO CONTAINER - DARK E FORMULÁRIO*/
-.container-content-dark, form{
+.container-dark, form{
     background-color: #011627; /*Cor de Fundo - Azul Escuro*/
     color: #fafafa; /*Cor da Fonte - Branco*/
 }
 
-.container-content-dark h1{
+.container-dark h1{
     font-weight: 500;
 }
 
 /*BOTÕES CALL TO ACTION*/
 .callToAction{
+    animation: pulse 2s ease-in-out infinite;
     font-family: 'Exo', sans-serif; /*Fonte do Google*/
     font-weight: 500; /*Fonte Semi Bold*/
     border-radius: 4px; /*Arredonda a Borda*/
@@ -193,12 +201,14 @@ img{
 
 /*CAMPOS DO INPUT E DO TEXTAREA*/
 #name, #email, #message{
+    font-family: 'Exo', sans-serif;
     width: 70vw; /*Largura de 70% da tela*/
     border: 1px solid #fafafa; /*Cor da Borda Branca*/
     border-radius: 4px; /*Arredonda a Borda*/
     margin: 8px 0 16px; /*Margem Superior de 8px, Margem Inferior de 16px e zera as laterais*/
     background-color: #080808; /*Cor de Fundo - Preta*/
     color: #fafafa; /*Cor da Fonte - Branco*/
+    text-align: center;
 }
 
 /*INPUTS NOME E EMAIL*/
@@ -209,4 +219,18 @@ img{
 /*TEXTAREA*/
 #message{
     height: 120px; /*Altura de 120px*/
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }

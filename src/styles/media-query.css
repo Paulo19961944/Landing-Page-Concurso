@@ -6,7 +6,7 @@
     }
 
     /*PARÁGRAFOS DOS CONTAINERS*/
-    .container-content-light p, .container-content-dark p{
+    .container-light p, .container-dark p{
         width: 80vw; /*Largura de 80% da Tela*/
     }
 }
@@ -24,7 +24,104 @@
     }
 
     /*PARÁGRAFOS DOS CONTAINERS*/
-    .container-content-light p, .container-content-dark p{
+    .container-light p, .container-dark p{
         width: 576px; /*Largura Máxima de 576px*/
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px){
+    header .header-container, .container{
+        max-width: 1200px;
+    }
+
+    #fecharMenuMobile, #btnAbrirMobile{
+        display: none;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    #menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu ul li{
+        margin: 0;
+        border: none;
+        width: max-content;
+        margin-left: 24px;
+    }
+
+    #menu ul li a{
+        font-size: 1.5rem;
+    }
+
+    #menu ul li a:hover{
+        text-decoration: underline;
+    }
+
+    .container{
+        padding: 96px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    p{
+        margin: 48px 0;
+    }
+
+    p, form label, .callToAction, #name, #email, #message{
+        font-size: 1.5rem;
+    }
+
+    .callToAction{
+        width: 240px;
+        height: 48px;
+    }
+
+    .callToAction:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.5s ease-out;
+    }
+
+    .card-1{
+        height: 720px;
+    }   
+
+    img{
+        width: 280px;
+        height: 280px;
+    }
+
+    form legend{
+        margin: 96px 0;
+        font-size: 3rem;
+    }
+
+    #name, #email{
+        width: 916px;
+        height: 40px;
+        margin-bottom: 48px;
+    }
+
+    #message{
+        height: 320px;
+        margin-bottom: 48px;
     }
 }
