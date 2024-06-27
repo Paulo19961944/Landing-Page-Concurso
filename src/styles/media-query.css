@@ -31,188 +31,227 @@
 
 /*DESKTOP*/
 @media (min-width: 1024px){
+    /*CONTAINERS*/
     header .header-container, .container{
-        max-width: 1100px;
+        max-width: 1100px; /*Largura Máxima de 1100px*/
     }
 
+    /*BOTÃO ABRIR E BOTÃO FECHAR*/
     #fecharMenuMobile, #btnAbrirMobile{
-        display: none;
+        display: none; /*Esconde o Botão*/
     }
 
+    /*CABEÇALHO*/
     header {
-        height: 200px;
+        height: 200px; /*Altura de 200px*/
     }
 
+    /*MENU DE NAVEGAÇÃO*/
     #menu{
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
+        width: 100%; /*Largura de 100%*/
+        display: flex; /*Flexbox*/
+        flex-direction: row-reverse; /*Alinha um do lado do outro no sentido reverso*/
     }
 
+    /*LISTA NÃO ORDENADA DO MENU*/
     #menu ul{
-        display: flex;
-        flex-direction: row;
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha um do lado do outro*/
     }
 
+    /*LISTAS DO MENU*/
     #menu ul li{
-        margin: 0;
-        border: none;
-        width: max-content;
-        margin-left: 24px;
+        margin: 0; /*Zera a Margem*/
+        border: none; /*Tira a Borda*/
+        width: max-content; /*Largura em todo o conteúdo*/
+        margin-left: 24px; /*Margem esquerda de 24px*/
     }
 
-    #menu ul li a{
-        font-size: 1.5rem;
-    }
-
+    /*LINKS DO MENU AO PASSAR O MOUSE*/
     #menu ul li a:hover{
-        text-decoration: underline;
+        text-decoration: underline; /*Sublinha o Link*/
     }
 
+    /*CLASSE MENU MOBLE ADICIONADA PELO JAVASCRIPT*/
     #menu.menu-mobile{
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        position: static;
-        top: auto;
-        left: auto;
+        justify-content: space-between; /*Alinha com espaço entre eles*/
+        width: 100%; /*Largura de 100% do elemento pai*/
+        height: 100%; /*Altura de 100% do elemento pai*/
+        position: static; /*Posição Padrão*/
+        top: auto; /*Padrão*/
+        left: auto; /*Padrão*/
     }
 
+    /*BOTÃO DE FECHAR MENU - CLASSE ADICIONADA NO JAVASCRIPT*/
     #fecharMenuMobile.fechar-menu-responsive{
-        display: none;
+        display: none; /*Esconde o Elemento*/
     }
 
+    /*CONTAINER PRINCIPAL*/
     .container{
-        padding: 96px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        padding: 96px 0; /*Preenchimento Vertical de 96px e zera nas Laterais*/
+        width: 100%; /*Largura de 100%*/
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        justify-content: space-between; /*Alinha no Eixo Principal entre os elementos*/
     }
 
-    h1{
-        font-size: 3rem;
+    /*TÍTULOS*/
+    h1, form legend{
+        font-size: 3rem; /*Tamanho da Fonte de 3rem - Aprox: 48px*/
     }
 
+    /*PARAGRÁFOS*/
     p{
-        margin: 48px 0;
+        margin: 48px 0; /*Margem Vertical de 48px e zera nas laterais*/
     }
 
-    p, form label, .callToAction, #name, #email, #message{
-        font-size: 1.5rem;
+    /*INPUTS, LINKS DO MENU, BOTÕES, TEXTOS FORMULÁRIO, PARÁGRAFOS*/
+    p, form label, #menu ul li a, .callToAction, #name, #email, #message{
+        font-size: 1.5rem; /*Tamanho da Fonte de 1.5rem - Aprox: 24px*/
     }
 
+    /*BOTÕES*/
     .callToAction{
-        width: 240px;
-        height: 48px;
+        width: 240px; /*Largura de 240px*/
+        height: 48px; /*Altura de 48px*/
     }
 
+    /*BOTÕES AO PASSAR O MOUSE*/
     .callToAction:hover{
-        cursor: pointer;
-        transform: scale(1.03);
-        transition: 0.5s ease-out;
+        cursor: pointer; /*Mãozinha no cursor*/
+        transform: scale(1.03); /*Tamanho de 103%*/
+        transition: 0.5s ease-out; /*Transição suave no final de 0.5s*/
     }
 
+    /*PRIMEIRO CARD*/
     .card-1{
-        height: 720px;
+        height: 720px; /*Altura de 720px*/
     }   
 
+    /*IMAGENS*/
     img{
-        margin-left: 48px;
-        width: 244px;
-        height: 244px;
+        margin-left: 48px; /*Margem a Esquerda de 48px*/
+        width: 244px; /*Largura de 244px*/
+        height: 244px; /*Altura de 244px*/
     }
 
+    /*TÍTULO DO FORMULÁRIO*/
     form legend{
-        margin: 96px 0;
-        font-size: 3rem;
+        margin: 96px 0; /*Margem Vertical de 96px e zera nas laterais*/
     }
 
+    /*INPUTS - NOME - EMAIL - MENSAGEM*/
+    #name, #email, #message{
+        width: 916px; /*Largura de 916px*/
+        margin-bottom: 48px; /*Margem Inferior de 48px*/
+    }
+
+    /*INPUTS - NOME - EMAIL*/
     #name, #email{
-        width: 916px;
-        height: 40px;
-        margin-bottom: 48px;
+        height: 40px; /*Altura de 40px*/
     }
 
+    /*INPUT MENSAGEM*/
     #message{
-        width: 916px;
-        height: 320px;
-        margin-bottom: 48px;
+        height: 320px; /*Altura de 320px*/
     }
 
+    /*ICONE COMPUTADOR - IMAGEM*/
     #iconeComputador{
-        width: 300px;
-        height: 247px;
+        width: 300px; /*Largura de 300px*/
+        height: 247px; /*Altura de 247px*/
     }
 }
 
+/*TELAS FULL HD*/
 @media (min-width: 1920px){
+    /*CABEÇALHO*/
     header{
-        height: 300px;
+        height: 300px; /*Altura de 300px*/
     }
 
+    /*CONTAINERS*/
     header .header-container, .container{
-        max-width: 1616px;
+        max-width: 1616px; /*Largura Máxima de 1616px*/
     }
 
+    /*IMAGENS*/
     img{
-        width: 375px;
-        height: 375px;
+        width: 375px; /*Largura de 375px*/
+        height: 375px; /*Altura de 375px*/
     }
 
+    /*LINKS MENU, TEXTOS FORMULÁRIO, BOTÕES, INPUTS*/
     #menu ul li a, p, form label, .callToAction, #name, #email, #message{
-        font-size: 2rem;
+        font-size: 2rem; /*Tamanho da Fonte de 2rem - Aprox: 32px*/
     }
 
-    p{
-        margin-bottom: 80px;
+    /*PARÁGRAFOS E TÍTULOS*/
+    p, h1{
+        margin-bottom: 80px; /*Margem Inferior de 80px*/
     }
 
-    h1{
-        margin-bottom: 80px;
-    }
-
+    /*TITULOS, TITULOS FORMULÁRIO*/
     h1, form legend{
-        font-size: 4rem;
+        font-size: 4rem; /*Tamanho da Fonte de 4rem - Aprox: 64px*/
     }
 
+    /*PRIMEIRO CARD*/
     .card-1{
-        height: 1080px;
+        height: 1080px; /*Altura de 1080px*/
     }
 
+    /*BOTÕES*/
     .callToAction{
-        border-radius: 8px;
-        width: 320px;
-        height: 64px;
+        border-radius: 8px; /*Arredonda a Borda em 8px*/
+        width: 320px; /*Largura de 320px*/
+        height: 64px; /*Altura de 64px*/
     }
 
+    /*PARÁGRAFOS DO CONTAINER*/
     .container-light p, .text-container p{
-        width: 840px;
+        width: 840px; /*Largura de 840px*/
     }
 }
 
-
+/*TELAS DE APROXIMADAMENTE - 2.5K*/
 @media(min-width: 2440px){
+    /*CONTAINERS*/
     header .header-container, .container{
-        max-width: 1920px;
+        max-width: 1920px; /*Largura Máxima de 1920px*/
     }
 
+    /*IMAGENS*/
     img{
-        width: 480px;
-        height: 480px;
+        width: 480px; /*Largura de 480px*/
+        height: 480px; /*Altura de 480px*/
     }
 
+    /*PARÁGRAFOS DO CONTAINER*/
     .container-light p, .text-container p{
-        width: 840px;
+        width: 840px; /*Largura de 840px*/
     }
 
+    /*ICONE DO COMPUTADOR - IMAGEM*/
     #iconeComputador{
-        width: 480px;
-        height: 396px;
+        width: 480px; /*Largura de 480px*/
+        height: 396px; /*Altura de 396px*/
     }
 
+    /*BOTÕES*/
     .callToAction{
-        width: 375px;
-        height: 72px;
+        width: 375px; /*Largura de 375px*/
+        height: 72px; /*Altura de 72px*/
+    }
+
+    /*INPUTS NAME - EMAIL*/
+    #name, #email{
+        height: 54px; /*Altura de 54px*/
+    }
+    
+    /*INPUTS NAME - EMAIL - MESSAGE*/
+    #name, #email, #message{
+        width: 1100px; /*Largura de 1100px*/
     }
 }

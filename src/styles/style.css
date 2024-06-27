@@ -5,8 +5,9 @@
     box-sizing: border-box; /*Ajusta o Box Model*/
 }
 
+/*DOCUMENTO HTML*/
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*Suaviza o scroll*/
 }
 
 /*CORPO DA PÁGINA*/
@@ -122,6 +123,7 @@ form legend{
     z-index: 2; /*Camada 2*/
 }
 
+/*BOTÃO ABRIR AO ADICIONAR CLASSE NO JAVASCRIPT*/
 #btnAbrirMobile.abrir-menu-responsive{
     display: none; /*Esconde o Display*/
 }
@@ -225,16 +227,20 @@ img{
     height: 120px; /*Altura de 120px*/
 }
 
+/*ANIMAÇÃO DO BOTÃO*/
 @keyframes pulse{
+    /*ESTADO INICIAL*/
     0%{
-        transform: scale(1);
+        transform: scale(1); /*Tamanho de 100%*/
     }
 
+    /*ESTADO INTERMEDIÁRIO*/
     50%{
-        transform: scale(1.05);
+        transform: scale(1.05); /*Tamanho de 105%*/
     }
 
+    /*ESTADO FINAL*/
     100%{
-        transform: scale(1);
+        transform: scale(1); /*Tamanho de 100%*/
     }
 }
