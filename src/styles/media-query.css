@@ -69,6 +69,19 @@
         text-decoration: underline;
     }
 
+    #menu.menu-mobile{
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    #fecharMenuMobile.fechar-menu-responsive{
+        display: none;
+    }
+
     .container{
         padding: 96px 0;
         width: 100%;
