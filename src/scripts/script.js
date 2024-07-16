@@ -7,8 +7,13 @@ const menuLinks = document.querySelectorAll('#menu ul li a')
 // Fecha o menu ao clicar nos links do menu
 for(const link of menuLinks){
     // Adiciona evento de click no link do menu
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (event) => {
         fecharMenu() // Fecha o menu
+
+        if (this.getAttribute('href') === '#home') {
+            // Cancela o comportamento padrão de scroll
+            event.preventDefault();
+        }
     })
 }
 

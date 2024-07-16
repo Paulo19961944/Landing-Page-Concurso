@@ -21,6 +21,9 @@ body{
 
 /*CABEÇALHO*/
 header{
+    z-index: 1; /*Fixa como camada superior*/
+    position: fixed; /*Posição Fixa*/
+    top: 0; /*Alinha no Topo*/
     width: 100vw; /*Largura de 100% da Tela*/
     display: flex; /*Flexbox*/
     justify-content: center; /*Alinha o Eixo Principal ao Centro*/
@@ -28,6 +31,11 @@ header{
     height: 96px; /*Altura de 96px*/
     background-color: #011627; /*Cor de Fundo - Azul Escuro*/
     color: #fafafa; /*Cor da Fonte Branca*/
+}
+
+/*Ajusta o Scroll da Tela*/
+#quem-somos, #aula-bonus, #inscreva-se{
+    scroll-margin-top: 96px; /*Dá uma margem no scroll*/
 }
 
 /*CONTAINER DO CABEÇALHO*/
@@ -55,8 +63,13 @@ h1{
     font-size: 1.1875rem; /*Tamanho da Fonte de 1.1875 rem - Aprox ~19px*/
 }
 
+main{
+    padding-top: 96px;
+}
+
 /*FORMULÁRIO*/
 form{
+    width: 100vw; /*Largura no Máximo da Tela*/
     padding: 96px 0; /*Espacamento Superior de 96px e 0 nas laterais*/
 }
 
