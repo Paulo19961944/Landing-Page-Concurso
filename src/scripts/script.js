@@ -7,7 +7,7 @@ const menuLinks = document.querySelectorAll('#menu ul li a')
 // Fecha o menu ao clicar nos links do menu
 for(const link of menuLinks){
     // Adiciona evento de click no link do menu
-    link.addEventListener('click', (event) => {
+    link.addEventListener('click', () => {
         fecharMenu() // Fecha o menu
     })
 }
